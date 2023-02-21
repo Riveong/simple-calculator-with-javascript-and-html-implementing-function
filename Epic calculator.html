@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script>
+
+            function tambah() {
+                var satu = parseInt(document.getElementById('bil1').value);
+                
+                var dua = parseInt(document.getElementById('bil2').value);
+                
+                var hasil = satu + dua;
+                document.getElementById("hasil").value = hasil;
+
+
+            }
+
+	    function kurang() {
+                var satu = parseInt(document.getElementById('bil1').value);
+                
+                var dua = parseInt(document.getElementById('bil2').value);
+                
+                var hasil = satu - dua;
+                document.getElementById("hasil").value = hasil;
+
+
+            }
+
+	    function kali() {
+                var satu = parseInt(document.getElementById('bil1').value);
+                
+                var dua = parseInt(document.getElementById('bil2').value);
+                
+                var hasil = satu * dua;
+                document.getElementById("hasil").value = hasil;
+
+
+            }
+
+	    function bagi() {
+                var satu = parseInt(document.getElementById('bil1').value);
+                
+                var dua = parseInt(document.getElementById('bil2').value);
+                
+                var hasil = satu / dua;
+                document.getElementById("hasil").value = hasil;
+
+
+            }
+
+        </script>
+
+
+
+    </head>
+    <body>
+        <h1>Epic calculator</h1>
+        <form>
+                <label for="bil1">
+                    first number
+                </label>
+
+                <input type="text" id="bil1" value="">
+
+                <br>
+
+                <label for="bil2">
+                    second number
+                </label>
+
+                <input type="text" id="bil2" value="">
+
+                <br>
+
+                
+                <button onclick="tambah()">PLUS</button>
+		<button onclick="kurang()">MINUS</button>
+		<button onclick="kali()">MULTIPLICATION</button>
+		<button onclick="bagi()">DISTRIBUTION</button>
+                <br>
+
+                <label for="hasil">hasil</label>
+                <input type="text" id="hasil" name="hasil">
+
+        </form>
+
+
+
+
+
+
+
+
+    </body>
+    </html>
